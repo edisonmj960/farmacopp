@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Product Description</title>
+<link rel="stylesheet" href={{url_for('static', filename='css/productDescription.css')}} />
+<link rel="stylesheet" href={{ url_for('static', filename='css/topStyle.css')}} />
+</head>
+<body>
+<div id="title">
+	<a href="/">
+		<img id="logo" src= {{ url_for('static', filename='images/logo.png') }} />
+	</a>
+	<form>
+		<input id="searchBox" type="text" name="searchQuery">
+		<input id="searchButton" type="submit" value="Search">
+	</form>
+
+	{% if not loggedIn %}
+	<div id="signInButton">
+		<a class="link" href="/loginForm">{% trans %}Sign In{% endtrans %}</a>
+	</div>
+	{% else %}
+	<div class="dropdown">
+		<button class="dropbtn">Hello, <br>{{firstName}}</button>
+		<div class="dropdown-content">
+			<a href="/account/orders">{% trans %}Your orders{% endtrans %}</a>
+			<a href="/account/profile">{% trans %}Your profile{% endtrans %}</a>
+			<hr>
+			<a href="/logout">{% trans %}Sign Out{% endtrans %}</a>
+		</div>
+	</div>
+	{% endif %}
+	<div id="kart">
+		<a class="link" href="/cart">
+			<img src={{url_for('static', filename='images/shoppingCart.png')}} id="cartIcon" />
+			CART {{noOfItems}}
+		</a>
+	</div>
+</div>
+<div id="display">
+	<div id="productName">
+		<h1>{{data[1]}}</h1>
+	</div>
+	<div>
+		<img src={{url_for('static', filename='uploads/'+data[4]) }} id="productImage"/>
+	</div>
+
+	<div id="productDescription">
+		<h2>{% trans %}Details</h2>
+		<table id="descriptionTable">
+			<tr>
+				<td>{% trans %}Name{% endtrans %}</td>
+				<td>{{data[1]}}</td>
+			</tr>
+			<tr>
+				<td>{% trans %}Price{% endtrans %}</td>
+				<td>${{data[2]}}</td>
+			</tr>
+			<tr>
+				<td>{% trans %}Stock{% endtrans %}</td>
+				<td>{{data[5]}}</td>
+			</tr>
+		</table>
+		<h2>{% trans %}Description{% endtrans %}</h2>
+		<p>{{data[3]}}</p>
+	</div>
+	<div id="addToCart">
+		<a href="/addToCart?productId={{request.args.get('productId')}}">{% trans %}Add to Cart{% endtrans %}</a>
+	</div>
+</div>
+</body>
+</html>
+

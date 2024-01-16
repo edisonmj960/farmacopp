@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}{% endblock %}</title>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ url_for('static', filename ='/css/alerta.css') }}">
+</head>
+
+<body>
+
+  <!--Header-->
+  <div>
+    <header class="p-3 mb-3 border-bottom">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+
+          <div class="dropdown">
+            <a href="{{ url_for('cliente.homecliente') }}"
+              class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+              <img src="/static/icons/pharmacy.png" width="50" height="50" alt="">
+              <span class="fs-5">FARMACOP</span>
+            </a>
+          </div>     
+          <div class="mx-auto" role="search">
+            <form class="d-flex" role="search" action="{{ url_for('cliente.buscar') }}" method="post">
+              <input type="text" name="busqueda" class="form-control" placeholder="{% trans %}Buscar Medicamento{% endtrans %}" aria-label="Search">
+              <button type="submit">{% trans %}Buscar{% endtrans %}</button>
+            </form>
+          </div>
+
+
+          <div class="dropdown">
+
+            <div class="dropdown me-auto">
+              <div class="dropdown me-auto">
+                <a href="#" class=" link-dark  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                  style="margin: 50px;">
+                  <img src="/static/icons/user.png" alt="icon user" width="40" height="40" class="rounded-circle">
+                  {{ session['nombre'] }}
+                </a>
+                <ul class="dropdown-menu text-small">
+                  <li><a class="dropdown-item" href="{{ url_for('cliente.datoscliente') }}">{% trans %}Mi Cuenta{% endtrans %}</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="{{ url_for('autenticar.logout') }}">{% trans %}Cerrar sesión{% endtrans %}</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div id="carrito" >
+            <a href="/carrito" class=" link-dark" aria-expanded="false">
+              <img src={{url_for('static', filename='icons/shoppingCar.png')}} id="cartIcon" width="40" height="40" class="rounded-circle"/>
+              CART {{noOfItems}}
+            </a>
+          </div>
+          
+
+        </div>
+        </form>
+      </div>
+    </header>
+  </div>
+
+  <!-- Clasificación Productos -->
+  <div class="container">
+    <div class="nav-scroller py-1 mb-2">
+      <nav class="nav d-flex justify-content-between ">
+        <a class="p-2 link-secondary text-decoration-none"
+          href="{{ url_for('cliente.medicamentoscliente') }}">{% trans %}Medicamentos{% endtrans %}</a>
+        <a class=" p-2 link-secondary text-decoration-none"
+          href="{{ url_for('cliente.cuidadopersonalclient') }}">{% trans %}Cuidado
+          Personal{% endtrans %}</a>
+        <a class=" p-2 link-secondary text-decoration-none"
+          href="{{ url_for('cliente.dermacosmetica') }}">{% trans %}Dermacosmética{% endtrans %}</a>
+        <a class=" p-2 link-secondary text-decoration-none"
+          href="{{ url_for('cliente.nutricionales') }}">{% trans %}Nutricionales{% endtrans %}</a>
+        <a class=" p-2 link-secondary text-decoration-none" href="{{ url_for('cliente.bebemed') }}">{% trans %}Bebé{% endtrans %}</a>
+      </nav>
+    </div>
+  </div>
+
+  {% block content %}{% endblock %}
+
+<!-- Contenido -->
+{% if mensaje %}
+<br>
+<br>
+<p class='text-center'>{% trans %}{{ mensaje }}{% endtrans %}</p>
+<br>
+<br>
+{% endif %}
+< class="container">
+  <div class="row row-cols-1 row-cols-md-4 g-4">
+    {% for resultado in resultados %}
+    <div class="col">
+      <div class="card h-100">
+        <img src="/static/img/medicamentos/amitriptilina.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{resultado[1]}}</h5>
+
+          <p class="card-text">{{resultado[2]}}</p>
+          <h4 class="precios" style="color: orangered;">{{resultado[4]}}</h4>
+          <div class="centrarButton" align="center">
+            <a class="btn btn-primary  btn-sm" href="{{ url_for('cliente.comprarproducto') }}" role="button">{% trans %}Comprar{% endtrans %}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  
+
+  <footer class="text-center text-lg-start bg-white text-muted">
+
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-capsules me-3 text-secondary"></i>FARMACOP
+
+            </h6>
+
+              <a href="#!" class="text-reset">{% trans %}Descubre la comodidad de cuidar tu salud desde casa con FARMACOP{% endtrans %}</a>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              {% trans %}  Nosotros {% endtrans %}
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">{% trans %} ¿Quiénes somos?{% endtrans %}</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">{% trans %}Preguntas Frecuentes{% endtrans %}</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">{% trans %}Políticas y Términos de Uso{% endtrans %}</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">{% trans %}Políticas de Envíos{% endtrans %}</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">{% trans %}Trabaja con nosotros{% endtrans %}</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">{% trans %}Enlaces de Interés{% endtrans %}</h6>
+            <p>
+              <a href="#!" class="text-reset">{% trans %}Superintendencia de industria y comercio{% endtrans %}
+              </a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">{% trans %}Superintendencia financiera{% endtrans %}</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">{% trans %}Cómo hacer un pedido en TDV{% endtrans %}</a>
+            </p>
+
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">{% trans %}Contáctenos{% endtrans %}</h6>
+            <p><i class="fas fa-home me-3 text-secondary"></i>{% trans %} Ipiales Nariño, CALLE 234A{% endtrans %}</p>
+            <p>
+              <i class="fas fa-envelope me-3 text-secondary"></i>
+              FARMACOP@farma.com.co
+            </p>
+            <p><i class="fas fa-phone me-3 text-secondary"></i>{% trans %} + 57 3136465306{% endtrans %}</p>
+            <p><i class="fas fa-print me-3 text-secondary"></i>{% trans %} + 57 3105084629{% endtrans %}</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+  </section>
+
+
+    <section class="d-flex justify-content-center justify-content-lg-center p-5 border-bottom">
+      <!-- Left -->
+      <div class="d-flex justify-content-center">
+        <div class="me-5 d-none d-lg-block">
+          <span>{% trans %}Síguenos en nuestras redes sociales{% endtrans %}</span>
+        </div>
+      </div>
+      <div>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+
+  <section>
+    <!-- Copyright -->
+     <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+       © 2023 Copyright.
+       <a class="text-reset fw-bold">{% trans %}Todos los derechos reservados{% endtrans %}</a>
+     </div>
+        <!-- Copyright -->
+       </footer>
+
+  </section>
+
+
+
+  <script type="text/javascript" src="/static/js/login.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

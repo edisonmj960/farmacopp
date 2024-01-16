@@ -1,0 +1,69 @@
+{% extends '/base_cliente_registrado.html' %}
+{% block title %}Comprar Producto{% endblock %}
+{% block content %}
+
+<!-- COMPRAS -->
+
+<div class="container centrarCard">
+  <form action="{{url_for('carro.agregar')}}" method="post" enctype="multipart/form-data">
+    <div class="card mb-3" style="max-width: 1300px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="/static/img/home/acetaminofen.png" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h2 class="card-title">{{productId}}</h2>
+            <h1 class="precios" style="color: orangered;">$00.00</h1>
+            <h5>{% trans %} Referencia: 123456789{% endtrans %}</h5>
+            <p class="card-text">
+            <h5>{% trans %}DETALLES DEL PRODUCTO{% endtrans %}
+            </h5>
+            </p>
+            <p class="card-text"><small class="text-muted">
+                <h5>{% trans %}Cantidad y vía de administración.{% endtrans %}</h5>
+              </small></p>
+
+            <div class="py-1">
+              <button type="submit" class="btn btn-primary"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                -
+              </button>
+
+              <input class="form-control-sm" name='cantidad' id='cantidad' type="text"
+                style="width: 130px; height: 35px;">
+
+              <button type="submit" class="btn btn-primary"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                +
+              </button>
+              <div id="agregar" class="btn btn-success">
+                <a type='submit' href="/agregar?productId={{request.args.get('productId')}}"
+                  style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">{% trans %}Comprar{% endtrans %}</a>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+<div class="container">
+  <div class="card">
+    <h5 class="card-header">{% trans %}Descripción del producto{% endtrans %}</h5>
+    <div class="card-body">
+      <h5 class="card-title">{% trans %}Nombre del producto.{% endtrans %}</h5>
+      <p class="card-text">{% trans %}Indicaciones:
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea id commodi, nam natus, debitis minima doloremque
+        adipisci atque praesentium vel accusantium, error ad laborum iste quisquam fugit qui veniam a.{% endtrans %}
+      </p>
+    </div>
+  </div>
+  <hr>
+</div>
+
+{% endblock %}

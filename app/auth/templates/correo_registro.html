@@ -1,0 +1,29 @@
+<!-- correo_registro.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Bienvenido a nuestra página</title>
+    <!-- Estilos CSS o enlaces a archivos de estilo -->
+    <style>
+        /* Estilos para el correo */
+        /* ... */
+    </style>
+</head>
+<body>
+    <div style="text-align: center;">
+        <img src="{{ url_for('static', filename='img/Carrusel01.png') }}" alt="Logo de la página">
+        <h1>Bienvenido a nuestra página farmacop</h1>
+        <p>Gracias por registrarte en nuestro sitio. Te damos la bienvenida a nuestra comunidad.</p>
+        <p>en nuestro sitio encuentra todo lo relacionado a medicamentos y productos de aseo para adultos y niños</p>
+        <p>Para más información, por favor visitanos en el barrio la floresta Ipiales Nariño</p>
+        <a href="{{ url }}">Visitar nuestro sitio:www.farmacop</a>
+    </div>
+    <hr>
+    <div>
+        <h3>Información de contacto: 3136465306 - 3105084629</h3>
+        <p>Dirección: Barrio la floresta</p>
+        <p>Correo electrónico: farmacop@gmail.com</p>
+    </div>
+</body>
+</html>

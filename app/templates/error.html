@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for("static", filename='/css/error404.css')}}">
+    <title>{{error.code }}</title>
+    
+
+</head>
+<body>
+
+    <h1>{% trans %}Solicitud incorrecta {% endtrans %}</h1>
+    <h1>{% trans %} Error {{ error.code }}{% endtrans %}</h1>
+    <p class="zoom-area">{% trans %}{{ error.description }}{% endtrans %}</p>
+    <section class="error-container">
+    <span>{{ error.code }}</span>
+    </section>
+
+    <div class="link-container">
+    <a target="_blank" href="{{ url_for('autenticar.login') }}" class="more-link">{% trans %}Vamos a la pagina principal{% endtrans %}</a>
+    </div>
+</body>
+</html>

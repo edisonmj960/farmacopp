@@ -1,0 +1,183 @@
+
+{% extends 'base_admin.html' %}
+  {% block title %}{{pbebe}}{% endblock %}
+
+{% block content %}
+
+	<!-- Content page-->
+	<section class="full-box dashboard-contentPage">
+		<!-- NavBar -->
+		<nav class="full-box dashboard-Navbar">
+			<ul class="full-box list-unstyled text-right">
+				<li class="pull-left">
+					<a href="#!" class="btn-menu-dashboard"><i class="glyphicon glyphicon-th-list"></i></a>
+				</li>
+
+				<li>
+					<a href="#!" class="btn-modal-help">
+						<i class="glyphicon glyphicon-info-sign"></i>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<!-- Content page -->
+		<div class="container-fluid">
+			<div class="page-header">
+			  <h1 class="text-titles text-center"><i class="glyphicon glyphicon-baby-formula zmdi-hc-fw"></i> {{titbeb}}</h1>
+			</div>
+			<p class="lead text-center">{{descnut}}
+			</p>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12">
+					<ul class="nav nav-tabs" style="margin-bottom: 15px;">
+						
+						<li><a href="#listprod" data-toggle="tab"><i class="glyphicon glyphicon-eye-open"></i> {{menuprodl}}</a></li>
+						<li><a href="#adicionar" data-toggle="tab"><i class="glyphicon glyphicon-plus"></i>{{menuproda}}</a></li>
+				
+					  	
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane fade " id="adicionar">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-12 col-md-10 col-md-offset-1">
+										<form action="{{url_for('administrador.registrar_producto')}}" method="post" enctype="multipart/form-data">
+											<input type="hidden" name="categoria" value="4">
+									    	<div class="form-group label-floating">
+											  <label class="control-label">{{adnom}}</label>
+											  <input class="form-control" type="text" name="nombre" id="nombre">
+											</div>
+											<div class="form-group label-floating">
+											  <label class="control-label">{{addes}}</label>
+											  <input class="form-control" type="text" name="descripcion" id="descripcion">
+											</div>
+											<div class="form-group label-floating">
+											  <label class="control-label">{{adcant}}</label>
+											  <input class="form-control" type="text" name="cantidad" id="cantidad">
+											</div>
+											<div class="form-group label-floating">
+											  <label class="control-label">{{adprec}}</label>
+											  <input class="form-control" type="text" name="precio" id="precio">
+											</div>
+											
+											<div class="form-group label-floating">
+											  <label class="control-label">{{adprov}}</label>
+											  <input class="form-control" type="text" name="proveedor" id="proveedor">
+											</div>
+											<div class="form-group">
+										        <label class="control-label">{{adfech}}</label>
+										        <input class="form-control" type="date" name="fecha_vencimiento" id="fecha_vencimiento">
+										    </div>
+											<div class="form-group">
+										      <label class="control-label">{{adimg}}</label>
+										      <div>
+										        <input type="text" readonly="" class="form-control" placeholder={{expl}}>
+										        <input type="file" name="imagen" id="imagen">
+										      </div>
+										    </div>
+												<div class="row">
+													<div class="col">
+														<p class="text-center">
+															<button href="#!" class="btn btn-danger btn-raised btn-sm"><i class="glyphicon glyphicon-remove-circle"></i> {{btncan}}</button>
+															<button type="submit" class="btn btn-info btn-raised btn-sm"><i class="zmdi zmdi-floppy"></i> {{btnsav}}</button>
+
+														</p>
+													</div>
+												</div>
+											
+		
+
+									    </form>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					  	<div class="tab-pane fade active in" id="listprod">
+							<div class="table-responsive">
+								<table class="table table-hover text-center">
+									<thead>
+										<tr>
+											<th class="text-center">#</th>
+											<th class="text-center">{{tbnomp}}</th>
+											<th class="text-center">{{tbcan}}</th>
+											<th class="text-center">{{tbprec}}</th>
+											<th class="text-center">{{tbfech}}</th>
+											<th class="text-center">{{tbmod}}
+											</th>
+											<th class="text-center">{{tbel}}</th>
+										</tr>
+									</thead>
+									<tbody>
+										{% for dato in productos %}
+										<tr>
+											<td>{{dato[0]}}</td>
+											<td>{{dato[1]}}</td>
+											<td>{{dato[3]}}</td>
+											<td>{{dato[4]}}</td>
+											<td>{{dato[6]}}</td>
+											<td>
+												                            {# Pasar el id (lo que hay en juego[0] #}
+											 <a href="{{url_for('administrador.editar_producto', id_producto=dato[0])}}" class="btn btn-success btn-raised btn-xs""
+												><i class="glyphicon glyphicon-edit"></i></a>
+					  
+											  </td>
+											  <td>
+												<form action="{{url_for('administrador.eliminar_producto')}}" method="POST">
+													<input type="hidden" name="id_producto" value="{{dato[0]}}">
+													<button onclick="confirmarBorrar()" class="btn btn-danger btn-raised btn-xs"><i class="glyphicon glyphicon-remove-circle"></i></button>
+												</form>
+
+											  </td>
+										</tr>
+										
+										{% endfor %}
+									</tbody>
+								</table>
+								<div class="text-center">
+									<nav aria-label="Page navigation example">
+										<ul class="pagination justify-content-center">
+								
+										  {% for pag in range(1,11) %}
+										  <li class="page-item">
+											<a class="page-link" href="/bebe_pag/{{pag}}">{{ pag }}</a>
+										  </li>
+										  {% endfor %}
+								
+										</ul>
+									  </nav>
+								</div>
+							</div>
+					  	</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Cuadro de dialogo Eliminar -->
+	<section>
+		<!-- Modal -->
+		<div class="modal fade" id="eliminarp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel"><h3 class="text-center">Eliminacion de producto</h3></h5>
+				</div>
+				<div class="modal-body">
+					<p class="text-center text-white bg-dar">Esta seguro de eliminar el registro?</p>
+				</div>
+				<div class="modal-footer">
+				<button type="button" class="btn btn-warning">Si</button>
+				<button type="button" class="btn btn-primary" data-dismiss="modal">No</button>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+
+
+  {% endblock %}

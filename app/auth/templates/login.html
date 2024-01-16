@@ -1,0 +1,91 @@
+{% extends '/base.html' %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+
+<div class="bodyy">
+  <h2 class="py-5">{{titlog}}</h2>
+  <div class="container containerr" id="container">
+    <div class="form-container sign-up-container">
+      <form action="{{ url_for('autenticar.loginUsser') }}" method="POST" autocomplete="off">
+        <h1>{{txtlogin}}</h1>
+        <br>
+        <br>
+        <input type="email" name="correo" id="correo" placeholder= {{plhcorr}} >
+        <input type="password" name="password" id="password" placeholder= {{plhpass}}>
+        <span toggle="#password" class="eye toggle-password"></span>
+             
+
+
+        <a class="resetpass" href="{{ url_for('autenticar.recuperarc') }}">{{olvcon}}</a>
+        <!-- <button>Acceder</button> -->
+        <button type="submit" class="btn btn-primary btn-send">{{txtlogin}}</button>
+
+      </form>
+    </div>
+    <div class="form-container sign-in-container">
+      <form name="formRegisterClient" id="formRegisterClient" action="{{ url_for('autenticar.registerUser') }}"
+        method="POST" autocomplete="off">
+
+        <input type="text" name="nombre" autofocus placeholder={{plhnom}}>
+        <input type="text" name="apellido" placeholder={{plhape}}>
+
+        <input type="email" name="correo" placeholder={{plhcorr}}>
+
+        <input type="text" name="direccion" placeholder={{plhdir}}>
+
+        <input type="phone" name="telefono" placeholder={{plhtel}}>
+
+
+        <input type="password" name="password" id="password" placeholder="{{ plhpass }}">
+        <span class="eye toggle-password" onclick="togglePassword('password')"></span>
+
+
+        <input type="password" name="repite_password" id="repite_password" placeholder="{{ plhpass2 }}">
+        <span class="eye toggle-password" onclick="togglePassword('repite_password')"></span>
+
+        
+      
+       
+
+        <select name="genero">
+          <option value="" selected="selected">{{plhgen}}</option>
+          <option value="M">{{plhgenm}}</option>
+          <option value="F">{{plhgenf}}</option>
+        </select>
+
+        <div class="d-grid gap-2 mt-3 mb-3">
+          <input type="submit" class="btn btn-primary btn-send" id="sendForm" value={{textreg}}>
+        </div>
+
+      </form>
+
+    </div>
+
+    <div class="overlay-container">
+
+      <div class="overlay">
+
+        <div class="overlay-panel overlay-left">
+          <h1>{{sincu}}</h1>
+          <p>{{descwel}}</p>
+
+          <button class="ghost" id="signIn">{{textreg}}</button>
+        </div>
+        <div class="overlay-panel overlay-right">
+
+          <h1>{{welcome}}</h1>
+          <p>{{descwel}}</p>
+
+          <button class="ghost" id="signUp">{{txtlogin}}</button>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+{% include 'alerts.html' %}
+
+{% endblock %}

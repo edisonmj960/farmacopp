@@ -1,0 +1,133 @@
+{% extends '/base_carrito.html' %}
+{% block title %}Carrito{% endblock %}
+{% block content %}
+
+
+<div class="container py-5">
+  <main>
+    <div class="row g-5">
+      <div class="col-md-5 col-lg-4 order-md-last">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+          <span class="text-primary">{% trans %}Su carrito{% endtrans %}</span>
+          <span class="badge bg-primary rounded-pill">6</span>
+        </h4>
+        <ul class="list-group mb-3">
+          {% for row in productos %}
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">{{row[2]}}</h6>
+              <small class="text-muted">{% trans %}Brief description{% endtrans %}</small>
+            </div>
+            <span class="text-muted">$12</span>
+          </li>
+          {% endfor %}
+          <li class="list-group-item d-flex justify-content-between bg-light">
+            <div class="text-success">
+              <h6 class="my-0">{% trans %}Promo code{% endtrans %}</h6>
+              <small>{% trans %}EXAMPLECODE{% endtrans %}</small>
+            </div>
+            <span class="text-success">{{totalPrice}}</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-md-7 col-lg-8">
+        <h4 class="mb-3">{% trans %}Información de su compra{% endtrans %}</h4>
+        <h6 class="mb-3">{% trans %}Información personal{% endtrans %}</h6>
+        <form method="POST" action="{{ url_for('carro.pasarelacompra') }}">
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">{% trans %}Nombre{% endtrans %}</label>
+              <input type="text" class="form-control" id="nombre" name="nombre" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                {% trans %}Valid first name is required.{% endtrans %}
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">{% trans %}Apellido{% endtrans %}</label>
+              <input type="text" class="form-control" id="apellido" name="apellido" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                {% trans %}Valid last name is required.{% endtrans %}
+              </div>
+            </div>
+
+            <div class="col-6">
+              <label for="username" class="form-label">{% trans %}Correo{% endtrans %}</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text">@</span>
+                <input type="text" class="form-control" id="correo" name="correo" placeholder="cliente@gmail.com"
+                  required>
+                <div class="invalid-feedback">
+                  {% trans %}Your username is required.{% endtrans %}
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <label for="number" class="form-label">Telefono <span class="text-muted">(Optional)</span></label>
+              <input type="number" class="form-control" id="telefono" name="telefono" placeholder="3116457000">
+              <div class="invalid-feedback">
+                {% trans %}Please enter a valid email address for shipping updates.{% endtrans %}
+              </div>
+            </div>
+
+            <h6 class="mb-3">{% trans %}Información de residencia{% endtrans %}</h6>
+
+            <div class="col-6">
+              <label for="address" class="form-label">{% trans %}Dirección{% endtrans %}</label>
+              <input type="text" class="form-control" id="direccion" name="direccion" placeholder="1234 Ipiales"
+                required>
+              <div class="invalid-feedback">
+                {% trans %}Please enter your shipping address.{% endtrans %}
+              </div>
+            </div>
+
+            <div class="col-6">
+              <label for="address2" class="form-label">{% trans %}Departamento{% endtrans %}</label>
+              <input type="text" class="form-control" id="departamento" name="departamento"
+                placeholder="Apartamento #11">
+            </div>
+
+            <div class="col-6">
+              <label for="address2" class="form-label">{% trans %}Ciudad{% endtrans %}</label>
+              <input type="text" class="form-control" id="ciudad" name="ciudad" placeholder="Ipiales">
+            </div>
+
+            <div class="col-6">
+              <label for="address2" class="form-label">{% trans %}País{% endtrans %}</label>
+              <input type="text" class="form-control" id="pais" name="pais" placeholder="Colombia">
+            </div>
+          </div>
+
+          <hr class="my-4">
+
+
+          <h4 class="mb-3">{% trans %}Métodos de pago{% endtrans %}</h4>
+
+          <div class="my-3">
+            <div class="form-check">
+              <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+              <label class="form-check-label" for="credit">{% trans %}Método 1{% endtrans %}</label>
+            </div>
+            <div class="form-check">
+              <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="debit">{% trans %}Método 2{% endtrans %}</label>
+            </div>
+            <div class="form-check">
+              <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="paypal">{% trans %}Método 3{% endtrans %}</label>
+            </div>
+          </div>
+          <hr class="my-4">
+          <input type="submit" class="w-100 btn btn-primary btn-lg" btn-send" id="sendForm" value='Continuar Comprar'>
+        </form>
+      </div>
+    </div>
+  </main>
+  <hr class="my-4">
+</div>
+
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src="checkout.js"></script>
+{% endblock %}

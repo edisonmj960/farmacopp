@@ -1,0 +1,631 @@
+# English translations for PROJECT.
+# Copyright (C) 2023 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2023-11-09 09:23-0500\n"
+"PO-Revision-Date: 2023-11-09 09:24-0500\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: administrador/admin.py:38 auth/auth.py:243
+msgid "Usuarios Registrados"
+msgstr "Registered users"
+
+#: administrador/admin.py:39 auth/auth.py:244
+msgid "Administradores"
+msgstr "Administrators"
+
+#: administrador/admin.py:40 auth/auth.py:245
+msgid "Registrados"
+msgstr "Registered"
+
+#: administrador/admin.py:41 administrador/admin.py:112
+#: administrador/admin.py:182 administrador/admin.py:253
+#: administrador/admin.py:325 administrador/admin.py:396
+#: administrador/admin.py:471 administrador/admin.py:532
+#: administrador/admin.py:603 administrador/admin.py:647
+msgid "Panel de control"
+msgstr "Control Panel"
+
+#: administrador/admin.py:42 administrador/admin.py:113
+#: administrador/admin.py:183 administrador/admin.py:254
+#: administrador/admin.py:326 administrador/admin.py:397
+#: administrador/admin.py:472 administrador/admin.py:533
+#: administrador/admin.py:604 administrador/admin.py:648
+msgid "Gestion producto"
+msgstr "Product management"
+
+#: administrador/admin.py:43 administrador/admin.py:114
+#: administrador/admin.py:184 administrador/admin.py:255
+#: administrador/admin.py:327 administrador/admin.py:398
+#: administrador/admin.py:473 administrador/admin.py:534
+#: administrador/admin.py:605 administrador/admin.py:649
+msgid "Cuidado personal"
+msgstr "Personal care"
+
+#: administrador/admin.py:44 administrador/admin.py:115
+#: administrador/admin.py:185 administrador/admin.py:256
+#: administrador/admin.py:328 administrador/admin.py:399
+#: administrador/admin.py:474 administrador/admin.py:535
+#: administrador/admin.py:606 administrador/admin.py:650
+msgid "Dermacosmeticos"
+msgstr "Dermocosmetics"
+
+#: administrador/admin.py:45 administrador/admin.py:116
+#: administrador/admin.py:186 administrador/admin.py:257
+#: administrador/admin.py:329 administrador/admin.py:400
+#: administrador/admin.py:475 administrador/admin.py:536
+#: administrador/admin.py:607 administrador/admin.py:651
+msgid "Nutricionales"
+msgstr "Nutritional"
+
+#: administrador/admin.py:46 administrador/admin.py:117
+#: administrador/admin.py:187 administrador/admin.py:258
+#: administrador/admin.py:330 administrador/admin.py:401
+#: administrador/admin.py:476 administrador/admin.py:537
+#: administrador/admin.py:608 administrador/admin.py:652
+msgid "Bebé"
+msgstr "Baby"
+
+#: administrador/admin.py:47 administrador/admin.py:118
+#: administrador/admin.py:188 administrador/admin.py:259
+#: administrador/admin.py:331 administrador/admin.py:402
+#: administrador/admin.py:477 administrador/admin.py:538
+#: administrador/admin.py:609 administrador/admin.py:653
+msgid "Medicamentos"
+msgstr "Medicines"
+
+#: administrador/admin.py:48 administrador/admin.py:119
+#: administrador/admin.py:189 administrador/admin.py:260
+#: administrador/admin.py:332 administrador/admin.py:403
+#: administrador/admin.py:478 administrador/admin.py:539
+#: administrador/admin.py:610 administrador/admin.py:654
+msgid "Gestion usuarios"
+msgstr "User management"
+
+#: administrador/admin.py:49 administrador/admin.py:120
+#: administrador/admin.py:190 administrador/admin.py:261
+#: administrador/admin.py:333 administrador/admin.py:404
+#: administrador/admin.py:479 administrador/admin.py:540
+#: administrador/admin.py:611 administrador/admin.py:655
+msgid "Administrador"
+msgstr "Administrator"
+
+#: administrador/admin.py:50 administrador/admin.py:121
+#: administrador/admin.py:191 administrador/admin.py:262
+#: administrador/admin.py:334 administrador/admin.py:405
+#: administrador/admin.py:480 administrador/admin.py:541
+#: administrador/admin.py:612 administrador/admin.py:656
+msgid "Cliente"
+msgstr "Customer"
+
+#: administrador/admin.py:51 administrador/admin.py:122
+#: administrador/admin.py:192 administrador/admin.py:263
+#: administrador/admin.py:335 administrador/admin.py:406
+#: administrador/admin.py:481 administrador/admin.py:542
+#: administrador/admin.py:613 administrador/admin.py:657
+msgid "Ayuda"
+msgstr "Help"
+
+#: administrador/admin.py:52 administrador/admin.py:82
+#: administrador/admin.py:144 administrador/admin.py:169
+#: administrador/admin.py:244 administrador/admin.py:269
+#: administrador/admin.py:344 administrador/admin.py:371
+#: administrador/admin.py:446 administrador/admin.py:472
+#: administrador/admin.py:547 administrador/admin.py:572
+#: administrador/admin.py:651 administrador/admin.py:693
+#: administrador/admin.py:752 administrador/admin.py:787
+#: administrador/admin.py:854 administrador/admin.py:900
+#: administrador/admin.py:941 administrador/admin.py:982
+#: administrador/admin.py:1094 administrador/admin.py:1132 auth/auth.py:278
+msgid "Pedidos"
+msgstr "Orders"
+
+#: administrador/admin.py:53 administrador/admin.py:83
+#: administrador/admin.py:145 administrador/admin.py:170
+#: administrador/admin.py:245 administrador/admin.py:270
+#: administrador/admin.py:345 administrador/admin.py:372
+#: administrador/admin.py:447 administrador/admin.py:473
+#: administrador/admin.py:548 administrador/admin.py:573
+#: administrador/admin.py:652 administrador/admin.py:694
+#: administrador/admin.py:753 administrador/admin.py:788
+#: administrador/admin.py:855 administrador/admin.py:901
+#: administrador/admin.py:942 administrador/admin.py:983
+#: administrador/admin.py:1095 administrador/admin.py:1133 auth/auth.py:279
+msgid "Revisar pedidos"
+msgstr Rreview orders"
+
+#: administrador/admin.py:52 administrador/admin.py:123
+#: administrador/admin.py:193 administrador/admin.py:264
+#: administrador/admin.py:336 administrador/admin.py:407
+#: administrador/admin.py:482 administrador/admin.py:543
+#: administrador/admin.py:614 administrador/admin.py:658
+msgid ""
+"A traves de esta seccion el administrador tiene los permisos para "
+"visualizar la cantidad de clientes y administradores registrados, asi "
+"como realizar operaciones de registro, modificacion y eliminacion de los "
+"productos ofrecidos por la farmacia, adicionalmente es capaz de generar "
+"reportes de ventas"
+msgstr ""
+"Through this section the administrator has the permissions to "
+"view the number of registered customers and administrators, as well"
+"How to perform registration, modification and deletion operations of the "
+"products offered by the pharmacy, additionally it is capable of generating"
+"sales reports"
+
+#: administrador/admin.py:92
+msgid "Administracion de productos de cuidado personal"
+msgstr "Administration of personal care products"
+
+#: administrador/admin.py:93
+msgid "Esta sección permite operar sobre los productos de cuidado personal"
+msgstr "This section allows you to operate on personal care products"
+
+#: administrador/admin.py:94 administrador/admin.py:164
+#: administrador/admin.py:235 administrador/admin.py:307
+#: administrador/admin.py:378 administrador/admin.py:452
+#: administrador/admin.py:585 administrador/admin.py:628
+msgid "Lista de productos"
+msgstr "List of products"
+
+#: administrador/admin.py:95 administrador/admin.py:165
+#: administrador/admin.py:236 administrador/admin.py:308
+#: administrador/admin.py:379 administrador/admin.py:453
+#: administrador/admin.py:586 administrador/admin.py:629
+msgid "Adicionar producto"
+msgstr "Add product"
+
+#: administrador/admin.py:96 administrador/admin.py:105
+#: administrador/admin.py:166 administrador/admin.py:176
+#: administrador/admin.py:237 administrador/admin.py:246
+#: administrador/admin.py:309 administrador/admin.py:318
+#: administrador/admin.py:380 administrador/admin.py:389
+#: administrador/admin.py:454 administrador/admin.py:522
+#: administrador/admin.py:587 administrador/admin.py:596
+#: administrador/admin.py:630 auth/auth.py:25 auth/auth.py:90 auth/auth.py:178
+#: auth/auth.py:228
+msgid "Nombre"
+msgstr "Name"
+
+#: administrador/admin.py:97 administrador/admin.py:167
+#: administrador/admin.py:238 administrador/admin.py:310
+#: administrador/admin.py:381 administrador/admin.py:588
+msgid "Descripcion"
+msgstr "Description"
+
+#: administrador/admin.py:98 administrador/admin.py:168
+#: administrador/admin.py:239 administrador/admin.py:311
+#: administrador/admin.py:382 administrador/admin.py:589
+msgid "Cantidad"
+msgstr "Amount"
+
+#: administrador/admin.py:99 administrador/admin.py:107
+#: administrador/admin.py:169 administrador/admin.py:178
+#: administrador/admin.py:240 administrador/admin.py:248
+#: administrador/admin.py:312 administrador/admin.py:320
+#: administrador/admin.py:383 administrador/admin.py:391
+#: administrador/admin.py:590 administrador/admin.py:598
+msgid "Precio"
+msgstr "Price"
+
+#: administrador/admin.py:100 administrador/admin.py:170
+#: administrador/admin.py:241 administrador/admin.py:313
+#: administrador/admin.py:384 administrador/admin.py:591
+msgid "Proveedor"
+msgstr "Supplier"
+
+#: administrador/admin.py:101 administrador/admin.py:171
+#: administrador/admin.py:242 administrador/admin.py:314
+#: administrador/admin.py:385 administrador/admin.py:592
+msgid "Fecha Vencimiento"
+msgstr "Expiration date"
+
+#: administrador/admin.py:102 administrador/admin.py:172
+#: administrador/admin.py:243 administrador/admin.py:315
+#: administrador/admin.py:386 administrador/admin.py:463
+#: administrador/admin.py:528 administrador/admin.py:593
+#: administrador/admin.py:639
+msgid "Imagen"
+msgstr "Image"
+
+#: administrador/admin.py:103 administrador/admin.py:174
+#: administrador/admin.py:244 administrador/admin.py:316
+#: administrador/admin.py:387 administrador/admin.py:466
+#: administrador/admin.py:594 administrador/admin.py:642
+msgid "Cancelar"
+msgstr "Cancel"
+
+#: administrador/admin.py:104 administrador/admin.py:175
+#: administrador/admin.py:245 administrador/admin.py:317
+#: administrador/admin.py:388 administrador/admin.py:467
+#: administrador/admin.py:595 administrador/admin.py:643
+msgid "Guardar"
+msgstr "Save"
+
+#: administrador/admin.py:106 administrador/admin.py:177
+#: administrador/admin.py:247 administrador/admin.py:319
+#: administrador/admin.py:390 administrador/admin.py:597
+msgid "Cantidad disponible"
+msgstr "Quantity Available"
+
+#: administrador/admin.py:108 administrador/admin.py:179
+#: administrador/admin.py:249 administrador/admin.py:321
+#: administrador/admin.py:392 administrador/admin.py:599
+msgid "Fecha de Vencimiento"
+msgstr "Due date"
+
+#: administrador/admin.py:109 administrador/admin.py:180
+#: administrador/admin.py:250 administrador/admin.py:322
+#: administrador/admin.py:393 administrador/admin.py:468
+#: administrador/admin.py:529 administrador/admin.py:600
+#: administrador/admin.py:644
+msgid "Modificar"
+msgstr "Modify"
+
+#: administrador/admin.py:110 administrador/admin.py:181
+#: administrador/admin.py:251 administrador/admin.py:323
+#: administrador/admin.py:394 administrador/admin.py:469
+#: administrador/admin.py:530 administrador/admin.py:601
+#: administrador/admin.py:645
+msgid "Eliminar"
+msgstr "Delete"
+
+#: administrador/admin.py:111 administrador/admin.py:173
+#: administrador/admin.py:252 administrador/admin.py:324
+#: administrador/admin.py:395 administrador/admin.py:470
+#: administrador/admin.py:531 administrador/admin.py:602
+#: administrador/admin.py:646
+msgid "Abrir Explorador"
+msgstr "Open Explorer"
+
+#: administrador/admin.py:124 administrador/admin.py:194
+#: administrador/admin.py:265 administrador/admin.py:337
+#: administrador/admin.py:408 administrador/admin.py:615
+#: administrador/admin.py:659
+msgid "Edicion de datos"
+msgstr "Data editing"
+
+#: administrador/admin.py:125 administrador/admin.py:195
+#: administrador/admin.py:266 administrador/admin.py:338
+#: administrador/admin.py:409 administrador/admin.py:616
+msgid "Esta sección permite operar sobre los productos"
+msgstr "This section allows you to operate on the products"
+
+#: administrador/admin.py:162
+msgid "Administracion de productos dermacosmeticos"
+msgstr "Administration of dermacosmetic products"
+
+#: administrador/admin.py:163
+msgid ""
+"Esta sección permite operar sobre los productos para el cuidado y "
+"tratamiento de la piel"
+msgstr ""
+"This section allows you to operate on care products and "
+"skin treatment"
+
+#: administrador/admin.py:233
+msgid "Administracion de productos nutricionales"
+msgstr "Administration of nutritional products"
+
+#: administrador/admin.py:234
+msgid "Esta sección permite operar sobre los productos nutricionales"
+msgstr "This section allows you to operate on nutritional products"
+
+#: administrador/admin.py:305
+msgid "Administracion de productos para bebé"
+msgstr "Baby Products Administration"
+
+#: administrador/admin.py:306
+msgid "Esta sección permite operar sobre los productos para el cuidado del bebé"
+msgstr "This section allows you to operate on baby care products"
+
+#: administrador/admin.py:376 administrador/admin.py:583
+msgid "Administracion de medicamentos en general"
+msgstr "General medication administration"
+
+#: administrador/admin.py:377 administrador/admin.py:584
+msgid ""
+"Esta sección permite operar sobre medicamentos de diferentes tipos y/o "
+"presentaciones"
+msgstr ""
+"This section allows you to operate on medicines of different types and/or"
+"presentations"
+
+#: administrador/admin.py:450 administrador/admin.py:626
+msgid "Panel de gestión de administradores"
+msgstr "Administrators management panel"
+
+#: administrador/admin.py:451 administrador/admin.py:627
+msgid ""
+"En este apartado esta diseñado para visualizar la informacion de los "
+"administrados registrados, asi como modificar y eliminar esta información"
+msgstr ""
+"This section is designed to display the information of the "
+"registered administrators, as well as modify and delete this information"
+
+#: administrador/admin.py:597
+msgid "Lista de administradores"
+msgstr Admin List""
+
+#: administrador/admin.py:598
+msgid "Adicionar administrador"
+msgstr "Add administrator"
+
+#: administrador/admin.py:455 administrador/admin.py:523
+#: administrador/admin.py:631 auth/auth.py:26 auth/auth.py:91 auth/auth.py:179
+#: auth/auth.py:229
+msgid "Apellido"
+msgstr "Last name"
+
+#: administrador/admin.py:456 administrador/admin.py:524
+#: administrador/admin.py:632 auth/auth.py:28 auth/auth.py:93 auth/auth.py:181
+#: auth/auth.py:231
+msgid "Direccion"
+msgstr "Address"
+
+#: administrador/admin.py:457 administrador/admin.py:525
+#: administrador/admin.py:633 auth/auth.py:29 auth/auth.py:94 auth/auth.py:182
+#: auth/auth.py:232
+msgid "Telefono"
+msgstr "Phone"
+
+#: administrador/admin.py:458 administrador/admin.py:526
+#: administrador/admin.py:634 auth/auth.py:27 auth/auth.py:92 auth/auth.py:180
+#: auth/auth.py:230
+msgid "Correo"
+msgstr "Mail"
+
+#: administrador/admin.py:459 administrador/admin.py:527
+#: administrador/admin.py:635
+msgid "Genero"
+msgstr "Gender"
+
+#: administrador/admin.py:460 administrador/admin.py:636 auth/auth.py:33
+#: auth/auth.py:98 auth/auth.py:186 auth/auth.py:236
+msgid "Masculino"
+msgstr "Male"
+
+#: administrador/admin.py:461 administrador/admin.py:637 auth/auth.py:34
+#: auth/auth.py:99 auth/auth.py:187 auth/auth.py:237
+msgid "Femenino"
+msgstr "Female"
+
+#: administrador/admin.py:462 administrador/admin.py:638
+msgid "Seleccione una opcion"
+msgstr "Select an option"
+
+#: administrador/admin.py:464 administrador/admin.py:640 auth/auth.py:30
+#: auth/auth.py:95 auth/auth.py:183 auth/auth.py:233
+msgid "Contraseña"
+msgstr "Password"
+
+#: administrador/admin.py:465 administrador/admin.py:641
+msgid "Repetir contraseña"
+msgstr "Repeat password"
+
+#: administrador/admin.py:637
+msgid "Lista de clientes"
+msgstr "Client list"
+
+#: administrador/admin.py:638
+msgid "Adicionar cliente"
+msgstr "Add customer"
+
+#: administrador/admin.py:520
+msgid "Panel de gestión de clientes"
+msgstr "Customer management panel"
+
+#: administrador/admin.py:521
+msgid ""
+"En este apartado esta diseñado para visualizar la informacion de los "
+"clientes, asi como modificar y eliminar la informacion almacenada"
+msgstr ""
+"This section is designed to display the information of the "
+"customers, as well as modify and delete the stored information"
+
+#: administrador/admin.py:660
+msgid ""
+"En este apartado esta diseñado para modificar la informacion almacenada "
+"de los usuarios"
+msgstr ""
+"This section is designed to modify the stored information"
+"of the users"
+
+#: administrador/admin.py:1070 administrador/admin.py:1108
+msgid "Administracion de pedidos"
+msgstr "Order management"
+
+#: administrador/admin.py:1071 administrador/admin.py:1109
+msgid ""
+"A traves de esta seccion se visualiza la informacion de los pedidos "
+"realizados por los clientes"
+msgstr ""
+"Through this section the information of the orders is displayed"
+"made by customers"
+
+#: administrador/admin.py:1078 administrador/admin.py:1116
+msgid "Ciudad"
+msgstr "City"
+
+#: administrador/admin.py:1079 administrador/admin.py:1117
+msgid "Departamento"
+msgstr "Department"
+
+#: administrador/admin.py:1080 administrador/admin.py:1118
+msgid "Pais"
+msgstr "Country"
+
+#: administrador/admin.py:1081 administrador/admin.py:1119
+msgid "Estado"
+msgstr "State"
+# English translations for PROJECT.
+# Copyright (C) 2023 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2023-03-08 17:17-0500\n"
+"PO-Revision-Date: 2023-03-08 17:18-0500\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: auth/auth.py:20
+msgid "Bienvenido de vuelta!"
+msgstr "Welcome back!"
+
+#: auth/auth.py:21
+msgid "Registra tu cuenta y accede a nuestros servicios"
+msgstr "Register your account and access our services"
+
+#: auth/auth.py:22 auth/auth.py:37
+msgid ""
+"Para mantenerse conectado con nosotros, inicie sesión con su información "
+"personal"
+msgstr "To stay connected with us, sign in with your personal information."
+
+#: auth/auth.py:23
+msgid "Nombre"
+msgstr "Name"
+
+#: auth/auth.py:24
+msgid "Apellido"
+msgstr "Last name"
+
+#: auth/auth.py:25
+msgid "Correo"
+msgstr "Mail"
+
+#: auth/auth.py:26
+msgid "Direccion"
+msgstr "Address"
+
+#: auth/auth.py:27
+msgid "Telefono"
+msgstr "Phone"
+
+#: auth/auth.py:28
+msgid "Contraseña"
+msgstr "Password"
+
+#: auth/auth.py:29
+msgid "Repite contraseña"
+msgstr "Repeat password"
+
+#: auth/auth.py:30
+msgid "Seleccione genero"
+msgstr "Select gender"
+
+#: auth/auth.py:31
+msgid "Masculino"
+msgstr "Male"
+
+#: auth/auth.py:32
+msgid "Femenino"
+msgstr "Female"
+
+#: auth/auth.py:33
+msgid "Aun no tienes cuenta?"
+msgstr "Don't have an account yet?"
+
+#: auth/auth.py:34
+msgid "Olvidaste tu contraseña?"
+msgstr "Did you forget your password?"
+
+#: auth/auth.py:35
+msgid "Iniciar Sesión"
+msgstr "Log in"
+
+#: auth/auth.py:36
+msgid "Registrate"
+msgstr "Register"
+
+
+#: auth/auth.py:40 auth/auth.py:105 auth/auth.py:193 auth/auth.py:249
+msgid "Descubre la comodidad de cuidar tu salud desde casa con FarmaCop"
+msgstr "Discover the comfort of taking care of your health from home with FarmaCop"
+
+#: auth/auth.py:41 auth/auth.py:106 auth/auth.py:194 auth/auth.py:250
+msgid "Nosotros"
+msgstr "Us"
+
+#: auth/auth.py:42 auth/auth.py:107 auth/auth.py:195 auth/auth.py:251
+msgid "¿Quiénes somos?"
+msgstr "About us?"
+
+#: auth/auth.py:43 auth/auth.py:108 auth/auth.py:196 auth/auth.py:252
+msgid "Preguntas Frecuentes"
+msgstr "Frequent questions"
+
+#: auth/auth.py:44 auth/auth.py:109 auth/auth.py:197 auth/auth.py:253
+msgid "Políticas y Términos de Uso"
+msgstr "Policies and Terms of Use"
+
+#: auth/auth.py:45 auth/auth.py:110 auth/auth.py:198 auth/auth.py:254
+msgid "Políticas de Envíos"
+msgstr "Shipping Policies"
+
+#: auth/auth.py:46 auth/auth.py:111 auth/auth.py:199 auth/auth.py:255
+msgid "Trabaja con nosotros"
+msgstr "Work with us"
+
+#: auth/auth.py:47 auth/auth.py:112 auth/auth.py:200 auth/auth.py:256
+msgid "Enlaces de interés"
+msgstr "Links of interest"
+
+#: auth/auth.py:48 auth/auth.py:113 auth/auth.py:201 auth/auth.py:257
+msgid "Superintendencia de industria y comercio"
+msgstr "Industry and Commerce Superintendence"
+
+#: auth/auth.py:49 auth/auth.py:114 auth/auth.py:202 auth/auth.py:258
+msgid "Superintendencia financiera"
+msgstr "Financial Supervision"
+
+#: auth/auth.py:50 auth/auth.py:115 auth/auth.py:203 auth/auth.py:259
+msgid "Cómo hacer un pedido en TDV"
+msgstr "How to order at TDV"
+
+#: auth/auth.py:51 auth/auth.py:116 auth/auth.py:204 auth/auth.py:260
+msgid "Contáctenos"
+msgstr "Contact Us"
+
+#: auth/auth.py:52 auth/auth.py:117 auth/auth.py:205 auth/auth.py:261
+msgid "Ipiales Nariño, CALLE 234A"
+msgstr "Ipiales Nariño, CALLE 234A"
+
+#: auth/auth.py:53 auth/auth.py:118 auth/auth.py:206 auth/auth.py:262
+msgid "farmacop@farma.com.co"
+msgstr "farmacop@farma.com.co"
+
+#: auth/auth.py:56 auth/auth.py:121 auth/auth.py:209 auth/auth.py:265
+msgid "Síguenos en nuestras redes sociales"
+msgstr "Follow us on our social networks"
+
+#: auth/auth.py:57 auth/auth.py:122 auth/auth.py:210 auth/auth.py:266
+msgid "Todos los derechos reservados"
+msgstr "All rights reserved"
+
+#: auth/auth.py:248
+msgid "Clientes"
+msgstr "Customers"
+
+

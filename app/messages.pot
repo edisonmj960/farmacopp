@@ -1,0 +1,1027 @@
+# Translations template for PROJECT.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-01-15 21:13-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: administrador/admin.py:38 administrador/admin.py:68
+#: administrador/admin.py:921 administrador/admin.py:959
+#: administrador/admin.py:979 administrador/admin.py:1020 auth/auth.py:260
+msgid "Usuarios Registrados"
+msgstr ""
+
+#: administrador/admin.py:39 administrador/admin.py:69
+#: administrador/admin.py:922 administrador/admin.py:960
+#: administrador/admin.py:980 administrador/admin.py:1021 auth/auth.py:261
+msgid "Administradores"
+msgstr ""
+
+#: administrador/admin.py:40 administrador/admin.py:70
+#: administrador/admin.py:923 administrador/admin.py:961
+#: administrador/admin.py:981 administrador/admin.py:1022 auth/auth.py:262
+msgid "Registrados"
+msgstr ""
+
+#: administrador/admin.py:41 administrador/admin.py:71
+#: administrador/admin.py:140 administrador/admin.py:165
+#: administrador/admin.py:240 administrador/admin.py:265
+#: administrador/admin.py:340 administrador/admin.py:367
+#: administrador/admin.py:442 administrador/admin.py:468
+#: administrador/admin.py:543 administrador/admin.py:568
+#: administrador/admin.py:647 administrador/admin.py:689
+#: administrador/admin.py:748 administrador/admin.py:783
+#: administrador/admin.py:850 administrador/admin.py:896
+#: administrador/admin.py:924 administrador/admin.py:962
+#: administrador/admin.py:982 administrador/admin.py:1023
+#: administrador/admin.py:1136 administrador/admin.py:1174 auth/auth.py:282
+msgid "Panel de control"
+msgstr ""
+
+#: administrador/admin.py:42 administrador/admin.py:72
+#: administrador/admin.py:141 administrador/admin.py:166
+#: administrador/admin.py:241 administrador/admin.py:266
+#: administrador/admin.py:341 administrador/admin.py:368
+#: administrador/admin.py:443 administrador/admin.py:469
+#: administrador/admin.py:544 administrador/admin.py:569
+#: administrador/admin.py:648 administrador/admin.py:690
+#: administrador/admin.py:749 administrador/admin.py:784
+#: administrador/admin.py:851 administrador/admin.py:897
+#: administrador/admin.py:925 administrador/admin.py:963
+#: administrador/admin.py:983 administrador/admin.py:1024
+#: administrador/admin.py:1137 administrador/admin.py:1175 auth/auth.py:283
+msgid "Gestion producto"
+msgstr ""
+
+#: administrador/admin.py:43 administrador/admin.py:73
+#: administrador/admin.py:142 administrador/admin.py:167
+#: administrador/admin.py:242 administrador/admin.py:267
+#: administrador/admin.py:342 administrador/admin.py:369
+#: administrador/admin.py:444 administrador/admin.py:470
+#: administrador/admin.py:545 administrador/admin.py:570
+#: administrador/admin.py:649 administrador/admin.py:691
+#: administrador/admin.py:750 administrador/admin.py:785
+#: administrador/admin.py:852 administrador/admin.py:898
+#: administrador/admin.py:926 administrador/admin.py:964
+#: administrador/admin.py:984 administrador/admin.py:1025
+#: administrador/admin.py:1138 administrador/admin.py:1176 auth/auth.py:284
+msgid "Cuidado personal"
+msgstr ""
+
+#: administrador/admin.py:44 administrador/admin.py:74
+#: administrador/admin.py:143 administrador/admin.py:168
+#: administrador/admin.py:243 administrador/admin.py:268
+#: administrador/admin.py:343 administrador/admin.py:370
+#: administrador/admin.py:445 administrador/admin.py:471
+#: administrador/admin.py:546 administrador/admin.py:571
+#: administrador/admin.py:650 administrador/admin.py:692
+#: administrador/admin.py:751 administrador/admin.py:786
+#: administrador/admin.py:853 administrador/admin.py:899
+#: administrador/admin.py:927 administrador/admin.py:965
+#: administrador/admin.py:985 administrador/admin.py:1026
+#: administrador/admin.py:1139 administrador/admin.py:1177 auth/auth.py:285
+msgid "Dermacosmeticos"
+msgstr ""
+
+#: administrador/admin.py:45 administrador/admin.py:75
+#: administrador/admin.py:144 administrador/admin.py:169
+#: administrador/admin.py:244 administrador/admin.py:269
+#: administrador/admin.py:344 administrador/admin.py:371
+#: administrador/admin.py:446 administrador/admin.py:472
+#: administrador/admin.py:547 administrador/admin.py:572
+#: administrador/admin.py:651 administrador/admin.py:693
+#: administrador/admin.py:752 administrador/admin.py:787
+#: administrador/admin.py:854 administrador/admin.py:900
+#: administrador/admin.py:928 administrador/admin.py:966
+#: administrador/admin.py:986 administrador/admin.py:1027
+#: administrador/admin.py:1140 administrador/admin.py:1178 auth/auth.py:286
+#: templates/base_carrito.html:100 templates/base_cliente_registrado.html:93
+msgid "Nutricionales"
+msgstr ""
+
+#: administrador/admin.py:46 administrador/admin.py:76
+#: administrador/admin.py:145 administrador/admin.py:170
+#: administrador/admin.py:245 administrador/admin.py:270
+#: administrador/admin.py:345 administrador/admin.py:372
+#: administrador/admin.py:447 administrador/admin.py:473
+#: administrador/admin.py:548 administrador/admin.py:573
+#: administrador/admin.py:652 administrador/admin.py:694
+#: administrador/admin.py:753 administrador/admin.py:788
+#: administrador/admin.py:855 administrador/admin.py:901
+#: administrador/admin.py:929 administrador/admin.py:967
+#: administrador/admin.py:987 administrador/admin.py:1028
+#: administrador/admin.py:1141 administrador/admin.py:1179 auth/auth.py:287
+#: templates/base_carrito.html:103 templates/base_cliente_registrado.html:94
+msgid "Bebé"
+msgstr ""
+
+#: administrador/admin.py:47 administrador/admin.py:77
+#: administrador/admin.py:146 administrador/admin.py:171
+#: administrador/admin.py:246 administrador/admin.py:271
+#: administrador/admin.py:346 administrador/admin.py:373
+#: administrador/admin.py:448 administrador/admin.py:474
+#: administrador/admin.py:549 administrador/admin.py:574
+#: administrador/admin.py:653 administrador/admin.py:695
+#: administrador/admin.py:754 administrador/admin.py:789
+#: administrador/admin.py:856 administrador/admin.py:902
+#: administrador/admin.py:930 administrador/admin.py:968
+#: administrador/admin.py:988 administrador/admin.py:1029
+#: administrador/admin.py:1142 administrador/admin.py:1180 auth/auth.py:288
+#: templates/base_carrito.html:91 templates/base_cliente_registrado.html:86
+msgid "Medicamentos"
+msgstr ""
+
+#: administrador/admin.py:48 administrador/admin.py:78
+#: administrador/admin.py:147 administrador/admin.py:172
+#: administrador/admin.py:247 administrador/admin.py:272
+#: administrador/admin.py:347 administrador/admin.py:374
+#: administrador/admin.py:449 administrador/admin.py:475
+#: administrador/admin.py:550 administrador/admin.py:575
+#: administrador/admin.py:654 administrador/admin.py:696
+#: administrador/admin.py:755 administrador/admin.py:790
+#: administrador/admin.py:857 administrador/admin.py:903
+#: administrador/admin.py:931 administrador/admin.py:969
+#: administrador/admin.py:989 administrador/admin.py:1030
+#: administrador/admin.py:1143 administrador/admin.py:1181 auth/auth.py:289
+msgid "Gestion usuarios"
+msgstr ""
+
+#: administrador/admin.py:49 administrador/admin.py:79
+#: administrador/admin.py:148 administrador/admin.py:173
+#: administrador/admin.py:248 administrador/admin.py:273
+#: administrador/admin.py:348 administrador/admin.py:375
+#: administrador/admin.py:450 administrador/admin.py:476
+#: administrador/admin.py:551 administrador/admin.py:576
+#: administrador/admin.py:655 administrador/admin.py:697
+#: administrador/admin.py:756 administrador/admin.py:791
+#: administrador/admin.py:858 administrador/admin.py:904
+#: administrador/admin.py:932 administrador/admin.py:970
+#: administrador/admin.py:990 administrador/admin.py:1031
+#: administrador/admin.py:1144 administrador/admin.py:1182 auth/auth.py:290
+msgid "Administrador"
+msgstr ""
+
+#: administrador/admin.py:50 administrador/admin.py:80
+#: administrador/admin.py:149 administrador/admin.py:174
+#: administrador/admin.py:249 administrador/admin.py:274
+#: administrador/admin.py:349 administrador/admin.py:376
+#: administrador/admin.py:451 administrador/admin.py:477
+#: administrador/admin.py:552 administrador/admin.py:577
+#: administrador/admin.py:656 administrador/admin.py:698
+#: administrador/admin.py:757 administrador/admin.py:792
+#: administrador/admin.py:859 administrador/admin.py:905
+#: administrador/admin.py:933 administrador/admin.py:971
+#: administrador/admin.py:991 administrador/admin.py:1032
+#: administrador/admin.py:1145 administrador/admin.py:1183 auth/auth.py:291
+msgid "Cliente"
+msgstr ""
+
+#: administrador/admin.py:51 administrador/admin.py:81
+#: administrador/admin.py:150 administrador/admin.py:175
+#: administrador/admin.py:250 administrador/admin.py:275
+#: administrador/admin.py:350 administrador/admin.py:377
+#: administrador/admin.py:452 administrador/admin.py:478
+#: administrador/admin.py:553 administrador/admin.py:578
+#: administrador/admin.py:657 administrador/admin.py:699
+#: administrador/admin.py:758 administrador/admin.py:793
+#: administrador/admin.py:860 administrador/admin.py:906
+#: administrador/admin.py:934 administrador/admin.py:972
+#: administrador/admin.py:992 administrador/admin.py:1033
+#: administrador/admin.py:1148 administrador/admin.py:1186
+msgid "Ayuda"
+msgstr ""
+
+#: administrador/admin.py:52 administrador/admin.py:82
+#: administrador/admin.py:151 administrador/admin.py:176
+#: administrador/admin.py:251 administrador/admin.py:276
+#: administrador/admin.py:351 administrador/admin.py:378
+#: administrador/admin.py:453 administrador/admin.py:479
+#: administrador/admin.py:554 administrador/admin.py:579
+#: administrador/admin.py:658 administrador/admin.py:700
+#: administrador/admin.py:759 administrador/admin.py:794
+#: administrador/admin.py:861 administrador/admin.py:907
+#: administrador/admin.py:935 administrador/admin.py:973
+#: administrador/admin.py:993 administrador/admin.py:1034
+#: administrador/admin.py:1146 administrador/admin.py:1184 auth/auth.py:292
+msgid "Pedidos"
+msgstr ""
+
+#: administrador/admin.py:53 administrador/admin.py:83
+#: administrador/admin.py:152 administrador/admin.py:177
+#: administrador/admin.py:252 administrador/admin.py:277
+#: administrador/admin.py:352 administrador/admin.py:379
+#: administrador/admin.py:454 administrador/admin.py:480
+#: administrador/admin.py:555 administrador/admin.py:580
+#: administrador/admin.py:659 administrador/admin.py:701
+#: administrador/admin.py:760 administrador/admin.py:795
+#: administrador/admin.py:862 administrador/admin.py:908
+#: administrador/admin.py:936 administrador/admin.py:974
+#: administrador/admin.py:994 administrador/admin.py:1035
+#: administrador/admin.py:1147 administrador/admin.py:1185 auth/auth.py:293
+msgid "Revisar pedidos"
+msgstr ""
+
+#: administrador/admin.py:54 administrador/admin.py:84
+#: administrador/admin.py:153 administrador/admin.py:186
+#: administrador/admin.py:253 administrador/admin.py:286
+#: administrador/admin.py:353 administrador/admin.py:388
+#: administrador/admin.py:455 administrador/admin.py:489
+#: administrador/admin.py:556 administrador/admin.py:589
+#: administrador/admin.py:660 administrador/admin.py:702
+#: administrador/admin.py:761 administrador/admin.py:796
+#: administrador/admin.py:863 administrador/admin.py:909
+#: administrador/admin.py:937 administrador/admin.py:975
+#: administrador/admin.py:995 administrador/admin.py:1036
+msgid ""
+"A traves de esta seccion el administrador tiene los permisos para "
+"visualizar la cantidad de clientes y administradores registrados, asi "
+"como realizar operaciones de registro, modificacion y eliminacion de los "
+"productos ofrecidos por la farmacia, adicionalmente es capaz de generar "
+"reportes de ventas"
+msgstr ""
+
+#: administrador/admin.py:120 administrador/admin.py:163
+msgid "Administracion de productos de cuidado personal"
+msgstr ""
+
+#: administrador/admin.py:121 administrador/admin.py:164
+msgid "Esta sección permite operar sobre los productos de cuidado personal"
+msgstr ""
+
+#: administrador/admin.py:122 administrador/admin.py:184
+#: administrador/admin.py:222 administrador/admin.py:284
+#: administrador/admin.py:322 administrador/admin.py:386
+#: administrador/admin.py:424 administrador/admin.py:487
+#: administrador/admin.py:525 administrador/admin.py:587
+#: administrador/admin.py:832 administrador/admin.py:877
+msgid "Lista de productos"
+msgstr ""
+
+#: administrador/admin.py:123 administrador/admin.py:185
+#: administrador/admin.py:223 administrador/admin.py:285
+#: administrador/admin.py:323 administrador/admin.py:387
+#: administrador/admin.py:425 administrador/admin.py:488
+#: administrador/admin.py:526 administrador/admin.py:588
+#: administrador/admin.py:833 administrador/admin.py:878
+msgid "Adicionar producto"
+msgstr ""
+
+#: administrador/admin.py:124 administrador/admin.py:133
+#: administrador/admin.py:178 administrador/admin.py:224
+#: administrador/admin.py:234 administrador/admin.py:278
+#: administrador/admin.py:324 administrador/admin.py:333
+#: administrador/admin.py:380 administrador/admin.py:426
+#: administrador/admin.py:435 administrador/admin.py:481
+#: administrador/admin.py:527 administrador/admin.py:536
+#: administrador/admin.py:581 administrador/admin.py:630
+#: administrador/admin.py:672 administrador/admin.py:738
+#: administrador/admin.py:773 administrador/admin.py:834
+#: administrador/admin.py:843 administrador/admin.py:879
+#: administrador/admin.py:1124 administrador/admin.py:1162 auth/auth.py:28
+#: auth/auth.py:95 auth/auth.py:194 auth/auth.py:245
+#: carrito/templates/checkout.html:40 cliente/templates/datoscliente.html:21
+msgid "Nombre"
+msgstr ""
+
+#: administrador/admin.py:125 administrador/admin.py:225
+#: administrador/admin.py:325 administrador/admin.py:427
+#: administrador/admin.py:528 administrador/admin.py:835
+msgid "Descripcion"
+msgstr ""
+
+#: administrador/admin.py:126 administrador/admin.py:226
+#: administrador/admin.py:326 administrador/admin.py:428
+#: administrador/admin.py:529 administrador/admin.py:836
+msgid "Cantidad"
+msgstr ""
+
+#: administrador/admin.py:127 administrador/admin.py:135
+#: administrador/admin.py:180 administrador/admin.py:227
+#: administrador/admin.py:236 administrador/admin.py:280
+#: administrador/admin.py:327 administrador/admin.py:335
+#: administrador/admin.py:382 administrador/admin.py:429
+#: administrador/admin.py:437 administrador/admin.py:483
+#: administrador/admin.py:530 administrador/admin.py:538
+#: administrador/admin.py:583 administrador/admin.py:837
+#: administrador/admin.py:845
+msgid "Precio"
+msgstr ""
+
+#: administrador/admin.py:128 administrador/admin.py:228
+#: administrador/admin.py:328 administrador/admin.py:430
+#: administrador/admin.py:531 administrador/admin.py:838
+msgid "Proveedor"
+msgstr ""
+
+#: administrador/admin.py:129 administrador/admin.py:229
+#: administrador/admin.py:329 administrador/admin.py:431
+#: administrador/admin.py:532 administrador/admin.py:839
+msgid "Fecha Vencimiento"
+msgstr ""
+
+#: administrador/admin.py:130 administrador/admin.py:230
+#: administrador/admin.py:330 administrador/admin.py:432
+#: administrador/admin.py:533 administrador/admin.py:639
+#: administrador/admin.py:681 administrador/admin.py:744
+#: administrador/admin.py:779 administrador/admin.py:840
+#: administrador/admin.py:888
+msgid "Imagen"
+msgstr ""
+
+#: administrador/admin.py:131 administrador/admin.py:232
+#: administrador/admin.py:331 administrador/admin.py:433
+#: administrador/admin.py:534 administrador/admin.py:642
+#: administrador/admin.py:684 administrador/admin.py:841
+#: administrador/admin.py:891
+msgid "Cancelar"
+msgstr ""
+
+#: administrador/admin.py:132 administrador/admin.py:233
+#: administrador/admin.py:332 administrador/admin.py:434
+#: administrador/admin.py:535 administrador/admin.py:643
+#: administrador/admin.py:685 administrador/admin.py:842
+#: administrador/admin.py:892 cliente/templates/datoscliente.html:75
+msgid "Guardar"
+msgstr ""
+
+#: administrador/admin.py:134 administrador/admin.py:179
+#: administrador/admin.py:235 administrador/admin.py:279
+#: administrador/admin.py:334 administrador/admin.py:381
+#: administrador/admin.py:436 administrador/admin.py:482
+#: administrador/admin.py:537 administrador/admin.py:582
+#: administrador/admin.py:844
+msgid "Cantidad disponible"
+msgstr ""
+
+#: administrador/admin.py:136 administrador/admin.py:181
+#: administrador/admin.py:237 administrador/admin.py:281
+#: administrador/admin.py:336 administrador/admin.py:383
+#: administrador/admin.py:438 administrador/admin.py:484
+#: administrador/admin.py:539 administrador/admin.py:584
+#: administrador/admin.py:846
+msgid "Fecha de Vencimiento"
+msgstr ""
+
+#: administrador/admin.py:137 administrador/admin.py:182
+#: administrador/admin.py:238 administrador/admin.py:282
+#: administrador/admin.py:337 administrador/admin.py:384
+#: administrador/admin.py:439 administrador/admin.py:485
+#: administrador/admin.py:540 administrador/admin.py:585
+#: administrador/admin.py:644 administrador/admin.py:686
+#: administrador/admin.py:745 administrador/admin.py:780
+#: administrador/admin.py:847 administrador/admin.py:893
+#: administrador/admin.py:1134 administrador/admin.py:1172
+msgid "Modificar"
+msgstr ""
+
+#: administrador/admin.py:138 administrador/admin.py:183
+#: administrador/admin.py:239 administrador/admin.py:283
+#: administrador/admin.py:338 administrador/admin.py:385
+#: administrador/admin.py:440 administrador/admin.py:486
+#: administrador/admin.py:541 administrador/admin.py:586
+#: administrador/admin.py:645 administrador/admin.py:687
+#: administrador/admin.py:746 administrador/admin.py:781
+#: administrador/admin.py:848 administrador/admin.py:894
+#: administrador/admin.py:1135 administrador/admin.py:1173
+msgid "Eliminar"
+msgstr ""
+
+#: administrador/admin.py:139 administrador/admin.py:231
+#: administrador/admin.py:339 administrador/admin.py:441
+#: administrador/admin.py:542 administrador/admin.py:646
+#: administrador/admin.py:688 administrador/admin.py:747
+#: administrador/admin.py:782 administrador/admin.py:849
+#: administrador/admin.py:895
+msgid "Abrir Explorador"
+msgstr ""
+
+#: administrador/admin.py:154 administrador/admin.py:254
+#: administrador/admin.py:354 administrador/admin.py:456
+#: administrador/admin.py:557 administrador/admin.py:864
+#: administrador/admin.py:910 administrador/admin.py:1151
+#: administrador/admin.py:1188
+msgid "Edicion de datos"
+msgstr ""
+
+#: administrador/admin.py:155 administrador/admin.py:255
+#: administrador/admin.py:355 administrador/admin.py:457
+#: administrador/admin.py:558 administrador/admin.py:865
+#: administrador/admin.py:1152 administrador/admin.py:1189
+msgid "Esta sección permite operar sobre los productos"
+msgstr ""
+
+#: administrador/admin.py:220 administrador/admin.py:263
+msgid "Administracion de productos dermacosmeticos"
+msgstr ""
+
+#: administrador/admin.py:221 administrador/admin.py:264
+msgid ""
+"Esta sección permite operar sobre los productos para el cuidado y "
+"tratamiento de la piel"
+msgstr ""
+
+#: administrador/admin.py:320 administrador/admin.py:365
+msgid "Administracion de productos nutricionales"
+msgstr ""
+
+#: administrador/admin.py:321 administrador/admin.py:366
+msgid "Esta sección permite operar sobre los productos nutricionales"
+msgstr ""
+
+#: administrador/admin.py:422 administrador/admin.py:466
+msgid "Administracion de productos para bebé"
+msgstr ""
+
+#: administrador/admin.py:423 administrador/admin.py:467
+msgid "Esta sección permite operar sobre los productos para el cuidado del bebé"
+msgstr ""
+
+#: administrador/admin.py:523 administrador/admin.py:566
+#: administrador/admin.py:830
+msgid "Administracion de medicamentos en general"
+msgstr ""
+
+#: administrador/admin.py:524 administrador/admin.py:567
+#: administrador/admin.py:831
+msgid ""
+"Esta sección permite operar sobre medicamentos de diferentes tipos y/o "
+"presentaciones"
+msgstr ""
+
+#: administrador/admin.py:626 administrador/admin.py:668
+#: administrador/admin.py:875
+msgid "Panel de gestión de administradores"
+msgstr ""
+
+#: administrador/admin.py:627 administrador/admin.py:669
+#: administrador/admin.py:876
+msgid ""
+"En este apartado esta diseñado para visualizar la informacion de los "
+"administrados registrados, asi como modificar y eliminar esta información"
+msgstr ""
+
+#: administrador/admin.py:628
+msgid "Lista de administradores"
+msgstr ""
+
+#: administrador/admin.py:629
+msgid "Adicionar administrador"
+msgstr ""
+
+#: administrador/admin.py:631 administrador/admin.py:673
+#: administrador/admin.py:739 administrador/admin.py:774
+#: administrador/admin.py:880 administrador/admin.py:1125
+#: administrador/admin.py:1163 auth/auth.py:29 auth/auth.py:96 auth/auth.py:195
+#: auth/auth.py:246 carrito/templates/checkout.html:48
+#: cliente/templates/datoscliente.html:29
+msgid "Apellido"
+msgstr ""
+
+#: administrador/admin.py:632 administrador/admin.py:674
+#: administrador/admin.py:740 administrador/admin.py:775
+#: administrador/admin.py:881 administrador/admin.py:1126
+#: administrador/admin.py:1129 administrador/admin.py:1164
+#: administrador/admin.py:1167 auth/auth.py:31 auth/auth.py:98 auth/auth.py:197
+#: auth/auth.py:248
+msgid "Direccion"
+msgstr ""
+
+#: administrador/admin.py:633 administrador/admin.py:675
+#: administrador/admin.py:741 administrador/admin.py:776
+#: administrador/admin.py:882 administrador/admin.py:1127
+#: administrador/admin.py:1165 auth/auth.py:32 auth/auth.py:99 auth/auth.py:198
+#: auth/auth.py:249
+msgid "Telefono"
+msgstr ""
+
+#: administrador/admin.py:634 administrador/admin.py:676
+#: administrador/admin.py:742 administrador/admin.py:777
+#: administrador/admin.py:883 administrador/admin.py:1128
+#: administrador/admin.py:1166 auth/auth.py:30 auth/auth.py:97 auth/auth.py:196
+#: auth/auth.py:247 carrito/templates/checkout.html:56
+msgid "Correo"
+msgstr ""
+
+#: administrador/admin.py:635 administrador/admin.py:677
+#: administrador/admin.py:743 administrador/admin.py:778
+#: administrador/admin.py:884
+msgid "Genero"
+msgstr ""
+
+#: administrador/admin.py:636 administrador/admin.py:678
+#: administrador/admin.py:885 auth/auth.py:36 auth/auth.py:103 auth/auth.py:202
+#: auth/auth.py:253
+msgid "Masculino"
+msgstr ""
+
+#: administrador/admin.py:637 administrador/admin.py:679
+#: administrador/admin.py:886 auth/auth.py:37 auth/auth.py:104 auth/auth.py:203
+#: auth/auth.py:254
+msgid "Femenino"
+msgstr ""
+
+#: administrador/admin.py:638 administrador/admin.py:680
+#: administrador/admin.py:887
+msgid "Seleccione una opcion"
+msgstr ""
+
+#: administrador/admin.py:640 administrador/admin.py:682
+#: administrador/admin.py:889 auth/auth.py:33 auth/auth.py:100 auth/auth.py:199
+#: auth/auth.py:250
+msgid "Contraseña"
+msgstr ""
+
+#: administrador/admin.py:641 administrador/admin.py:683
+#: administrador/admin.py:890
+msgid "Repetir contraseña"
+msgstr ""
+
+#: administrador/admin.py:670
+msgid "Lista de clientes"
+msgstr ""
+
+#: administrador/admin.py:671
+msgid "Adicionar cliente"
+msgstr ""
+
+#: administrador/admin.py:736 administrador/admin.py:771
+msgid "Panel de gestión de clientes"
+msgstr ""
+
+#: administrador/admin.py:737 administrador/admin.py:772
+msgid ""
+"En este apartado esta diseñado para visualizar la informacion de los "
+"clientes, asi como modificar y eliminar la informacion almacenada"
+msgstr ""
+
+#: administrador/admin.py:911
+msgid ""
+"En este apartado esta diseñado para modificar la informacion almacenada "
+"de los usuarios"
+msgstr ""
+
+#: administrador/admin.py:1122 administrador/admin.py:1160
+msgid "Administracion de pedidos"
+msgstr ""
+
+#: administrador/admin.py:1123 administrador/admin.py:1161
+msgid ""
+"A traves de esta seccion se visualiza la informacion de los pedidos "
+"realizados por los clientes"
+msgstr ""
+
+#: administrador/admin.py:1130 administrador/admin.py:1168
+#: carrito/templates/checkout.html:93
+msgid "Ciudad"
+msgstr ""
+
+#: administrador/admin.py:1131 administrador/admin.py:1169
+#: carrito/templates/checkout.html:87
+msgid "Departamento"
+msgstr ""
+
+#: administrador/admin.py:1132 administrador/admin.py:1170
+msgid "Pais"
+msgstr ""
+
+#: administrador/admin.py:1133 administrador/admin.py:1171
+msgid "Estado"
+msgstr ""
+
+#: administrador/admin.py:1150 administrador/admin.py:1187
+msgid ""
+"A traves de esta seccion se visualiza la cantidad de clientes y "
+"administradores registrados, asi como realizar operaciones de registro, "
+"modificacion y eliminacion de los productos ofrecidos por la farmacia, "
+"adicionalmente es capaz de generar reportes de ventas"
+msgstr ""
+
+#: auth/auth.py:25 auth/auth.py:92 auth/auth.py:191 auth/auth.py:242
+msgid "Registra tu cuenta y accede a nuestros servicios"
+msgstr ""
+
+#: auth/auth.py:26 auth/auth.py:93 auth/auth.py:192 auth/auth.py:243
+msgid "Bienvenido de vuelta!"
+msgstr ""
+
+#: auth/auth.py:27 auth/auth.py:42 auth/auth.py:94 auth/auth.py:109
+#: auth/auth.py:193 auth/auth.py:208 auth/auth.py:244 auth/auth.py:259
+msgid ""
+"Para mantenerse conectado con nosotros, inicie sesión con su información "
+"personal"
+msgstr ""
+
+#: auth/auth.py:34 auth/auth.py:101 auth/auth.py:200 auth/auth.py:251
+msgid "Repite contraseña"
+msgstr ""
+
+#: auth/auth.py:35 auth/auth.py:102 auth/auth.py:201 auth/auth.py:252
+msgid "Seleccione genero"
+msgstr ""
+
+#: auth/auth.py:38 auth/auth.py:105 auth/auth.py:204 auth/auth.py:255
+msgid "Aun no tienes cuenta?"
+msgstr ""
+
+#: auth/auth.py:39 auth/auth.py:106 auth/auth.py:205 auth/auth.py:256
+msgid "Olvidaste tu contraseña?"
+msgstr ""
+
+#: auth/auth.py:40 auth/auth.py:107 auth/auth.py:206 auth/auth.py:257
+#: templates/base_cliente_no_registrado.html:62
+msgid "Iniciar Sesión"
+msgstr ""
+
+#: auth/auth.py:41 auth/auth.py:108 auth/auth.py:207 auth/auth.py:258
+msgid "Registrate"
+msgstr ""
+
+#: auth/auth.py:43 auth/auth.py:110 auth/auth.py:209 auth/auth.py:264
+msgid "Descubre la comodidad de cuidar tu salud desde casa con FarmaCop"
+msgstr ""
+
+#: auth/auth.py:44 auth/auth.py:111 auth/auth.py:210 auth/auth.py:265
+#: templates/base_carrito.html:170
+#: templates/base_cliente_no_registrado.html:115
+msgid "Nosotros"
+msgstr ""
+
+#: auth/auth.py:45 auth/auth.py:112 auth/auth.py:211 auth/auth.py:266
+#: templates/base_carrito.html:173
+#: templates/base_cliente_no_registrado.html:118
+msgid "¿Quiénes somos?"
+msgstr ""
+
+#: auth/auth.py:46 auth/auth.py:113 auth/auth.py:212 auth/auth.py:267
+#: templates/base_carrito.html:176
+#: templates/base_cliente_no_registrado.html:121
+#: templates/base_cliente_registrado.html:161
+msgid "Preguntas Frecuentes"
+msgstr ""
+
+#: auth/auth.py:47 auth/auth.py:114 auth/auth.py:213 auth/auth.py:268
+#: templates/base_carrito.html:179
+#: templates/base_cliente_no_registrado.html:124
+#: templates/base_cliente_registrado.html:164
+msgid "Políticas y Términos de Uso"
+msgstr ""
+
+#: auth/auth.py:48 auth/auth.py:115 auth/auth.py:214 auth/auth.py:269
+#: templates/base_carrito.html:182
+#: templates/base_cliente_no_registrado.html:127
+#: templates/base_cliente_registrado.html:167
+msgid "Políticas de Envíos"
+msgstr ""
+
+#: auth/auth.py:49 auth/auth.py:116 auth/auth.py:215 auth/auth.py:270
+#: templates/base_carrito.html:185
+#: templates/base_cliente_no_registrado.html:130
+#: templates/base_cliente_registrado.html:170
+msgid "Trabaja con nosotros"
+msgstr ""
+
+#: auth/auth.py:50 auth/auth.py:117 auth/auth.py:216 auth/auth.py:271
+#: templates/base_carrito.html:194
+msgid "Enlaces de interés"
+msgstr ""
+
+#: auth/auth.py:51 auth/auth.py:118 auth/auth.py:217 auth/auth.py:272
+#: templates/base_carrito.html:197
+#: templates/base_cliente_no_registrado.html:140
+#: templates/base_cliente_registrado.html:180
+msgid "Superintendencia de industria y comercio"
+msgstr ""
+
+#: auth/auth.py:52 auth/auth.py:119 auth/auth.py:218 auth/auth.py:273
+#: templates/base_carrito.html:201
+#: templates/base_cliente_no_registrado.html:145
+#: templates/base_cliente_registrado.html:184
+msgid "Superintendencia financiera"
+msgstr ""
+
+#: auth/auth.py:53 auth/auth.py:120 auth/auth.py:219 auth/auth.py:274
+#: templates/base_carrito.html:204
+#: templates/base_cliente_no_registrado.html:148
+#: templates/base_cliente_registrado.html:187
+msgid "Cómo hacer un pedido en TDV"
+msgstr ""
+
+#: auth/auth.py:54 auth/auth.py:121 auth/auth.py:220 auth/auth.py:275
+#: templates/base_carrito.html:213
+#: templates/base_cliente_no_registrado.html:157
+#: templates/base_cliente_registrado.html:196
+msgid "Contáctenos"
+msgstr ""
+
+#: auth/auth.py:55 auth/auth.py:122 auth/auth.py:221 auth/auth.py:276
+msgid "Ipiales Nariño, CALLE 234A"
+msgstr ""
+
+#: auth/auth.py:56 auth/auth.py:123 auth/auth.py:222 auth/auth.py:277
+msgid "farmacop@farma.com.co"
+msgstr ""
+
+#: auth/auth.py:57 auth/auth.py:124 auth/auth.py:278
+msgid "+ 57 3217655433"
+msgstr ""
+
+#: auth/auth.py:58 auth/auth.py:125 auth/auth.py:279
+msgid " + 57 3146785432"
+msgstr ""
+
+#: auth/auth.py:59 auth/auth.py:126 auth/auth.py:223 auth/auth.py:280
+#: templates/base_carrito.html:234 templates/base_cliente_registrado.html:216
+msgid "Síguenos en nuestras redes sociales"
+msgstr ""
+
+#: auth/auth.py:60 auth/auth.py:127 auth/auth.py:224 auth/auth.py:281
+#: templates/base_carrito.html:263 templates/base_cliente_registrado.html:246
+msgid "Todos los derechos reservados"
+msgstr ""
+
+#: auth/auth.py:263
+msgid "Clientes"
+msgstr ""
+
+#: carrito/templates/cart.html:8
+msgid "SUS COMPRAS"
+msgstr ""
+
+#: carrito/templates/cart.html:16
+msgid "En Stock"
+msgstr ""
+
+#: carrito/templates/cart.html:28
+msgid "Nombre del producto"
+msgstr ""
+
+#: carrito/templates/cart.html:33
+msgid "Cantidad Agregada"
+msgstr ""
+
+#: carrito/templates/cart.html:40
+msgid "Valor del Producto"
+msgstr ""
+
+#: carrito/templates/cart.html:48
+msgid "Descartar"
+msgstr ""
+
+#: carrito/templates/cart.html:50
+msgid "Disminuir"
+msgstr ""
+
+#: carrito/templates/cart.html:52
+msgid " Aun no has añadido productos al carrito"
+msgstr ""
+
+#: carrito/templates/cart.html:64
+msgid "Total Compra Productos: "
+msgstr ""
+
+#: carrito/templates/cart.html:67
+msgid "Password"
+msgstr ""
+
+#: carrito/templates/cart.html:71
+msgid "COMPRAR"
+msgstr ""
+
+#: carrito/templates/checkout.html:11
+msgid "Su carrito"
+msgstr ""
+
+#: carrito/templates/checkout.html:19
+msgid "Brief description"
+msgstr ""
+
+#: carrito/templates/checkout.html:26
+msgid "Promo code"
+msgstr ""
+
+#: carrito/templates/checkout.html:27
+msgid "EXAMPLECODE"
+msgstr ""
+
+#: carrito/templates/checkout.html:35
+msgid "Información de su compra"
+msgstr ""
+
+#: carrito/templates/checkout.html:36
+msgid "Información personal"
+msgstr ""
+
+#: carrito/templates/checkout.html:43
+msgid "Valid first name is required."
+msgstr ""
+
+#: carrito/templates/checkout.html:51
+msgid "Valid last name is required."
+msgstr ""
+
+#: carrito/templates/checkout.html:62
+msgid "Your username is required."
+msgstr ""
+
+#: carrito/templates/checkout.html:71
+msgid "Please enter a valid email address for shipping updates."
+msgstr ""
+
+#: carrito/templates/checkout.html:75
+msgid "Información de residencia"
+msgstr ""
+
+#: carrito/templates/checkout.html:78 cliente/templates/datoscliente.html:48
+msgid "Dirección"
+msgstr ""
+
+#: carrito/templates/checkout.html:82
+msgid "Please enter your shipping address."
+msgstr ""
+
+#: carrito/templates/checkout.html:98
+msgid "País"
+msgstr ""
+
+#: carrito/templates/checkout.html:106
+msgid "Métodos de pago"
+msgstr ""
+
+#: carrito/templates/checkout.html:111
+msgid "Método 1"
+msgstr ""
+
+#: carrito/templates/checkout.html:115
+msgid "Método 2"
+msgstr ""
+
+#: carrito/templates/checkout.html:119
+msgid "Método 3"
+msgstr ""
+
+#: cliente/templates/bebemed.html:16 cliente/templates/comprarproducto.html:42
+#: cliente/templates/cuidadopersonalclient.html:19
+#: cliente/templates/dermacosmetica.html:17
+#: cliente/templates/homecliente.html:44 cliente/templates/inicio.html:44
+#: cliente/templates/medicamentos.html:17
+#: cliente/templates/nutricionales.html:17 templates/base_carrito.html:132
+#: templates/base_cliente_registrado.html:121
+msgid "Comprar"
+msgstr ""
+
+#: cliente/templates/comprarproducto.html:18
+msgid " Referencia: 123456789"
+msgstr ""
+
+#: cliente/templates/comprarproducto.html:20
+msgid "DETALLES DEL PRODUCTO"
+msgstr ""
+
+#: cliente/templates/comprarproducto.html:24
+msgid "Cantidad y vía de administración."
+msgstr ""
+
+#: cliente/templates/comprarproducto.html:57
+msgid "Descripción del producto"
+msgstr ""
+
+#: cliente/templates/comprarproducto.html:59
+msgid "Nombre del producto."
+msgstr ""
+
+#: cliente/templates/comprarproducto.html:60
+msgid ""
+"Indicaciones:\n"
+"        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea id "
+"commodi, nam natus, debitis minima doloremque\n"
+"        adipisci atque praesentium vel accusantium, error ad laborum iste"
+" quisquam fugit qui veniam a."
+msgstr ""
+
+#: cliente/templates/cuidadopersonalclient.html:2
+#: templates/base_carrito.html:94
+msgid "Cuidado Personal"
+msgstr ""
+
+#: cliente/templates/datoscliente.html:12
+msgid "MIS DATOS PERSONALES"
+msgstr ""
+
+#: cliente/templates/datoscliente.html:40
+msgid "Correo electrónico"
+msgstr ""
+
+#: cliente/templates/datoscliente.html:58
+msgid "Celular"
+msgstr ""
+
+#: cliente/templates/datoscliente.html:66
+msgid "Género"
+msgstr ""
+
+#: cliente/templates/datoscliente.html:76
+msgid "Volver"
+msgstr ""
+
+#: cliente/templates/homecliente.html:54 cliente/templates/inicio.html:54
+msgid "Ver más"
+msgstr ""
+
+#: templates/alerts.html:8
+msgid "✔ Ingreso existoso ✔"
+msgstr ""
+
+#: templates/alerts.html:23
+msgid "❌ Error, Verifique los datos ❌"
+msgstr ""
+
+#: templates/base_carrito.html:45
+msgid " Buscar Medicamento "
+msgstr ""
+
+#: templates/base_carrito.html:47 templates/base_cliente_no_registrado.html:46
+#: templates/base_cliente_registrado.html:42
+msgid "Buscar"
+msgstr ""
+
+#: templates/base_carrito.html:62 templates/base_checkout.html:40
+#: templates/base_cliente_registrado.html:57
+msgid "Mi Cuenta"
+msgstr ""
+
+#: templates/base_carrito.html:66 templates/base_checkout.html:44
+#: templates/base_cliente_registrado.html:61
+msgid "Cerrar sesión"
+msgstr ""
+
+#: templates/base_carrito.html:97 templates/base_cliente_registrado.html:91
+msgid "Dermacosmética"
+msgstr ""
+
+#: templates/base_carrito.html:115
+#, python-format
+msgid " %(mensaje)s "
+msgstr ""
+
+#: templates/base_carrito.html:161
+#: templates/base_cliente_no_registrado.html:107
+#: templates/base_cliente_registrado.html:147 templates/base_recuperar.html:36
+msgid "Descubre la comodidad de cuidar tu salud desde casa con FARMACOP"
+msgstr ""
+
+#: templates/base_carrito.html:214 templates/base_cliente_registrado.html:197
+msgid " Ipiales Nariño, CALLE 234A"
+msgstr ""
+
+#: templates/base_carrito.html:219 templates/base_cliente_registrado.html:202
+msgid " + 57 3136465306"
+msgstr ""
+
+#: templates/base_carrito.html:220 templates/base_cliente_registrado.html:203
+msgid " + 57 3105084629"
+msgstr ""
+
+#: templates/base_cliente_no_registrado.html:44
+msgid " Buscar Medicamento"
+msgstr ""
+
+#: templates/base_cliente_no_registrado.html:138
+#: templates/base_cliente_registrado.html:178 templates/base_recuperar.html:68
+msgid "Enlaces de Interés"
+msgstr ""
+
+#: templates/base_cliente_registrado.html:41
+msgid "Buscar Medicamento"
+msgstr ""
+
+#: templates/base_cliente_registrado.html:88
+msgid ""
+"Cuidado\n"
+"          Personal"
+msgstr ""
+
+#: templates/base_cliente_registrado.html:105
+#, python-format
+msgid "%(mensaje)s"
+msgstr ""
+
+#: templates/base_cliente_registrado.html:155
+msgid "  Nosotros "
+msgstr ""
+
+#: templates/base_cliente_registrado.html:158
+msgid " ¿Quiénes somos?"
+msgstr ""
+

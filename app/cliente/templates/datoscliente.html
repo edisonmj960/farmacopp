@@ -1,0 +1,83 @@
+{% extends '/base_datos_cliente.html' %}
+{% block title %}Datos cliente{% endblock %}
+{% block content %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/styleDatosCliente.css' ) }}">
+
+
+<div class="container">
+  <div class="inicio_adm">
+    <div class="card">
+      <form action="{{url_for('cliente.actualizarDatosCliente')}}" method="post" enctype="multipart/form-data">
+        <h3 class="card-header text-center">{% trans %}MIS DATOS PERSONALES{% endtrans %}</h3>
+        <div class="card-body">
+          <div class="container text-right">
+            <input type="hidden" name="id" value="{{dataLogin.id}}">
+            <div class="row align-items-start">
+            </div>
+            <div class="row align-items-start">
+              <div class="col">
+                <div class="input-group input-group-sm mb-3">
+                  <span class="input-group-text" id="inputGroup-sizing-sm">{% trans %}Nombre{% endtrans %}</span>
+                  <input type="text" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-sm" name="nombre" id="nombre" value="{{dataLogin.nombre}}"
+                    required>
+                </div>
+              </div>
+              <div class="col">
+                <div class="input-group input-group-sm mb-3">
+                  <span class="input-group-text" id="inputGroup-sizing-sm">{% trans %}Apellido{% endtrans %}</span>
+                  <input type="text" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-sm" name="apellido" id="apellido" value="{{dataLogin.apellido}}"
+                    required>
+                </div>
+
+              </div>
+            </div>
+            <div class="row align-items-start">
+              <div class="col">
+                <div class="input-group input-group-sm mb-3">
+                  <span class="input-group-text" id="inputGroup-sizing-sm">{% trans %}Correo electrónico{% endtrans %}</span>
+                  <input type="text" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-sm" name="correo" id="correo" value="{{dataLogin.emailLogin}}"
+                    required>
+                </div>
+              </div>
+              <div class="col">
+                <div class="input-group input-group-sm mb-3">
+                  <span class="input-group-text" id="inputGroup-sizing-sm">{% trans %}Dirección{% endtrans %}</span>
+                  <input type="text" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-sm" name="direccion" id="direccion"
+                    value="{{dataLogin.direccion}}" required>
+                </div>
+              </div>
+            </div>
+            <div class="row align-items-start">
+              <div class="col">
+                <div class="input-group input-group-sm mb-3">
+                  <span class="input-group-text" id="inputGroup-sizing-sm">{% trans %}Celular{% endtrans %}</span>
+                  <input type="text" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-sm" id="telefono" name="telefono" value="{{dataLogin.telefono}}"
+                    required>
+                </div>
+              </div>
+              <div class="col">
+                <div class="input-group input-group-sm mb-3">
+                  <span class="input-group-text" id="inputGroup-sizing-sm">{% trans %}Género{% endtrans %}</span>
+                  <input type="text" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-sm" id="genero" name="genero" value="{{dataLogin.genero}}"
+                    required>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class=" py-3 text-center">
+            <button type="submit" class="btn btn-success">{% trans %}Guardar{% endtrans %}</button>
+            <a class="btn btn-danger" role="button" href="{{ url_for('cliente.homecliente') }}">{% trans %}Volver{% endtrans %}</a>
+          </div>
+        </div>
+      </form>
+    </div>
+    <hr>
+  </div>
+  {% endblock %}

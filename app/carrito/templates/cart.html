@@ -1,0 +1,78 @@
+{% extends '/base_carrito.html' %}
+{% block title %}Carrito{% endblock %}
+{% block content %}
+
+<hr>
+<div class="container">
+  <div class="text-center py-1" style="color: #6495ED;">
+    <h3>{% trans %}SUS COMPRAS{% endtrans %}</h3>
+    <hr>
+  </div>
+  <div class="row row-cols-1 row-cols-md-4 g-4 py-5">
+
+    {% for row in productos %}
+    <div class="col">
+      <h4 class="d-flex justify-content-between align-items-center mb-3">
+        <span class="text-primary">{% trans %}En Stock{% endtrans %}</span>
+        <span class="badge bg-primary rounded-pill">{{row[1]}}</span>
+      </h4>
+      <ul class="list-group mb-3">
+        <li class="list-group-item d-flex justify-content-between lh-sm">
+          <div>
+            <img style="height: 100%; width: 100%;" src={{url_for('static', filename='uploads/' +row[4])}} id="image" />
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-sm">
+          <div>
+            <h6 class="my-0">{{row[2]}}</h6>
+            <small class="text-muted">{% trans %}Nombre del producto{% endtrans %}</small>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-sm">
+          <div>
+            <h6 class="my-0">{% trans %}Cantidad Agregada{% endtrans %}</h6>
+            <small class="text-muted">{{row[2]}}</small>
+          </div>
+          <span class="text-muted">{{row[5]}}</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between bg-light">
+          <div class="text-success">
+            <h6 class="my-0">{% trans %}Valor del Producto{% endtrans %}</h6>
+          </div>
+          <span class="text-success">${{row[3]}}</span>
+        </li>
+        <li class="list-group-item  lh-sm">
+          <div class="text-center">
+            <h6 class="my-0">
+              {% if row[5] == 0%}
+              <a href="/eliminar?productId={{row[1]}}" class="btn btn-warning">{% trans %}Descartar{% endtrans %}</a>
+              {% elif row[5] != 0%}
+              <a href="/eliminar?productId={{row[1]}}" class="btn btn-danger">{% trans %}Disminuir{% endtrans %}</a>
+              {% elif row[5] == None%}
+              <p class='text-center'>{% trans %} Aun no has añadido productos al carrito{% endtrans %}</p>
+              {% endif %}
+            </h6>
+          </div>
+        </li>
+      </ul>
+      <hr class="py-2">
+    </div>
+    {% endfor %}
+  </div>
+  <hr>
+  <div class="text-center">
+    <h6 class="my-0 py-1" style="color: #6495ED;">{% trans %}Total Compra Productos: {% endtrans %}</h6>
+    <form class="row g-2 row m-0 row justify-content-center">
+      <div class="col-auto">
+        <label for="inputPassword2" class="visually-hidden">{% trans %}Password{% endtrans %}</label>
+        <input type="password" class="form-control" id="inputPassword2" placeholder="${{totalPrice}}" disabled>
+      </div>
+      <div class="col-auto">
+        <a type="submit" class="btn btn-success mb-3" href="/checkout">{% trans %}COMPRAR{% endtrans %}</a>
+      </div>
+    </form>
+  </div>
+  <hr>
+</div>
+
+{% endblock %}

@@ -1,0 +1,59 @@
+{% extends 'base_admin.html' %}
+  {% block title %}{{panel}}{% endblock %}
+
+{% block content %}
+
+	<!-- Content page-->
+	<section class="full-box dashboard-contentPage">
+		<!-- NavBar -->
+		<nav class="full-box dashboard-Navbar">
+			<ul class="full-box list-unstyled text-right">
+				<li class="pull-left">
+					<a href="#!" class="btn-menu-dashboard"><i class="glyphicon glyphicon-th-list"></i></a>
+				</li>
+
+				<li>
+					<a href="#!" class="btn-modal-help">
+						<i class="glyphicon glyphicon-info-sign"></i>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<!-- Content page -->
+		<div class="container-fluid">
+			<div class="page-header">
+			  <h1 class="text-titles text-center">{{usrreg}}</h1>
+			</div>
+		</div>
+		<div class="full-box text-center" style="padding: 30px 10px;">
+			<article class="full-box tile">
+				<div class="full-box tile-title text-center text-titles text-uppercase">
+					{{titadm}}
+				</div>
+				<div class="full-box tile-icon text-center">
+					<i class="glyphicon glyphicon-user"></i>
+				</div>
+				<div class="full-box tile-number text-titles">
+					<p class="full-box">{{admin}}</p>
+					<small>{{reg}}</small>
+				</div>
+			</article>
+			<article class="full-box tile">
+				<div class="full-box tile-title text-center text-titles text-uppercase">
+					Clientes
+				</div>
+				<div class="full-box tile-icon text-center">
+					<i class="glyphicon glyphicon-user"></i>
+				</div>
+				<div class="full-box tile-number text-titles">
+					<p class="full-box">{{cliente}}</p>
+					<small>{{reg}}</small>
+				</div>
+			</article>
+		</div>
+
+
+		
+	</section>
+	{% include 'alerts.html' %}
+	{% endblock %}
